@@ -1,0 +1,5 @@
+C:\Users\Training\Documents\Tananyagok\C#\Week1\01_dotNET alapozás\FirstConsoleApp\FirstClassLibrary\bin\Debug\FirstClassLibrary.dll
+C:\Users\Training\Documents\Tananyagok\C#\Week1\01_dotNET alapozás\FirstConsoleApp\FirstClassLibrary\bin\Debug\FirstClassLibrary.pdb
+C:\Users\Training\Documents\Tananyagok\C#\Week1\01_dotNET alapozás\FirstConsoleApp\FirstClassLibrary\obj\Debug\FirstClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Training\Documents\Tananyagok\C#\Week1\01_dotNET alapozás\FirstConsoleApp\FirstClassLibrary\obj\Debug\FirstClassLibrary.dll
+C:\Users\Training\Documents\Tananyagok\C#\Week1\01_dotNET alapozás\FirstConsoleApp\FirstClassLibrary\obj\Debug\FirstClassLibrary.pdb
