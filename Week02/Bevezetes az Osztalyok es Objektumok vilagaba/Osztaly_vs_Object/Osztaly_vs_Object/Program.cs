@@ -58,8 +58,8 @@ namespace Osztaly_vs_Object
             Console.WriteLine(kliens.Address);
             kliens.Move("Budapest, Jégverem utca 8.");
             Console.WriteLine(kliens.Address);
-            Console.ReadKey();
 
+            Console.WriteLine("/////////////BMI///////////");
             BodyMass myBody = new BodyMass(70,1.78);
             BodyMass imiBody = new BodyMass(80, 1.72);
             imiBody.GetBodyMassIndex();
@@ -68,7 +68,29 @@ namespace Osztaly_vs_Object
             Console.WriteLine( myBody.GetBodyCategory());
             Console.WriteLine(myBody.IsThinnerThan(imiBody));
 
-            Console.ReadKey(); 
+            Console.ReadKey();
+            Console.WriteLine("/////////////PENDRIVE///////////");
+
+            Pendrive myPendrive = new Pendrive("first pendrive", 1024, 25000);
+            Console.WriteLine(myPendrive.ToString());
+
+            myPendrive.IncreasePrice(100);
+            Console.WriteLine(myPendrive.ToString());
+            myPendrive.IncreasePrice(100);
+            Console.WriteLine(myPendrive.ToString());
+
+            Pendrive badPendrive = new Pendrive("badPendrive", 128, 200000);
+            Pendrive amazingPendrive = new Pendrive("amazingPendrive", 2000, 5);
+
+            Console.WriteLine(myPendrive.ComparePricePerCapacity(badPendrive));
+            Console.WriteLine(myPendrive.ComparePricePerCapacity(amazingPendrive));
+            Console.WriteLine(myPendrive.ComparePricePerCapacity(myPendrive));
+
+            Console.WriteLine(myPendrive.IsCheaperThan(amazingPendrive));
+            Console.WriteLine(myPendrive.IsCheaperThan(badPendrive));
+
+            Console.ReadKey();
+
         }
     }
 }
