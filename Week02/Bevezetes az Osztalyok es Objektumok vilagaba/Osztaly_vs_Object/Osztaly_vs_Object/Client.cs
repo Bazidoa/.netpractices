@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Osztaly_vs_Object
+namespace Yellowroad
 {
     public class Client
     {
