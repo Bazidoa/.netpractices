@@ -6,19 +6,41 @@ using System.Threading.Tasks;
 
 namespace Osztaly_vs_Object
 {
-   public class Pendrive
+    public class Pendrive
     {
-        private string name;
+
+        public string Name { get; set; }
+
         private int capacity;
+        public int Capacity
+        {
+            get { return capacity; }
+            set
+            {
+                if (value > 0)
+                {
+                    capacity = value;
+                }
+            }
+        }
+
         private int price;
-        public int Price {
+        public int Price
+        {
             get { return price; }
+            set
+            {
+                if (value > 0)
+                {
+                    price = value;
+                }
+            }
         }
 
         //returns the data of the pendrive as String
         public override string ToString()
         {
-            StringBuilder myStringbuilder = new StringBuilder(name);
+            StringBuilder myStringbuilder = new StringBuilder(Name);
             myStringbuilder.Append(" ");
             myStringbuilder.Append(capacity);
             myStringbuilder.Append("GB");
@@ -31,7 +53,7 @@ namespace Osztaly_vs_Object
         }
 
         //increases the pendrives price by given percent
-        public void IncreasePrice (int percent)
+        public void IncreasePrice(int percent)
         {
 
             price = price + (price * (percent / 100));
@@ -43,7 +65,7 @@ namespace Osztaly_vs_Object
         public int ComparePricePerCapacity(Pendrive secondPendrive)
         {
             int result = 0;
-            if (this.price/this.capacity > secondPendrive.price / secondPendrive.capacity)
+            if (this.price / this.capacity > secondPendrive.price / secondPendrive.capacity)
             {
                 result = 1;
             }
@@ -66,9 +88,9 @@ namespace Osztaly_vs_Object
         }
 
         //construtor
-        public Pendrive (string name, int capacity, int price)
+        public Pendrive(string name, int capacity, int price)
         {
-            this.name = name;
+            Name = name;
             this.capacity = capacity;
             this.price = price;
         }

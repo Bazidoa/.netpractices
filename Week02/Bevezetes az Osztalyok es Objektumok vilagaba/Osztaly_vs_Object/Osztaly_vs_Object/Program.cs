@@ -62,9 +62,8 @@ namespace Osztaly_vs_Object
             Console.WriteLine("/////////////BMI///////////");
             BodyMass myBody = new BodyMass(70,1.78);
             BodyMass imiBody = new BodyMass(80, 1.72);
-            imiBody.GetBodyMassIndex();
 
-            Console.WriteLine(  myBody.GetBodyMassIndex());
+            Console.WriteLine(  myBody.Bmiprop);
             Console.WriteLine( myBody.GetBodyCategory());
             Console.WriteLine(myBody.IsThinnerThan(imiBody));
 
@@ -88,6 +87,11 @@ namespace Osztaly_vs_Object
 
             Console.WriteLine(myPendrive.IsCheaperThan(amazingPendrive));
             Console.WriteLine(myPendrive.IsCheaperThan(badPendrive));
+
+            Console.WriteLine(myBody.Bmiprop);
+
+            amazingPendrive.Capacity = 2048;
+            Console.WriteLine(amazingPendrive.Capacity);
 
             Console.ReadKey();
 

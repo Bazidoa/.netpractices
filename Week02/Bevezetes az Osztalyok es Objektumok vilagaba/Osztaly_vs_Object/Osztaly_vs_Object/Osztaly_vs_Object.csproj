@@ -46,6 +46,7 @@
     <Compile Include="BodyMass.cs" />
     <Compile Include="Book.cs" />
     <Compile Include="Client.cs" />
+    <Compile Include="Coffee.cs" />
     <Compile Include="Pendrive.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

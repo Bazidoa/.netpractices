@@ -12,14 +12,53 @@ namespace Osztaly_vs_Object
         private double magassag;
         private double bmi;
 
-        //public double BMI { get; private set; }
 
-        public double GetBodyMassIndex()
+
+        private int height;
+        public int Height
         {
-            bmi =tomeg / (magassag * magassag);
-
-            return bmi;
+            get { return height; }
+            set
+            {
+                if (value > 0 && value <= 280)
+                {
+                    height = value;
+                }
+            }
         }
+
+        private int weight;
+
+        public int Weight
+        {
+            get { return weight; }
+            set
+            {
+                if (value > 0)
+                {
+                    weight = value;
+                }
+            }
+        }
+
+        private double bmiprop;
+
+        public double Bmiprop
+        {
+            get
+            {
+                bmiprop = tomeg / (magassag * magassag);
+                return bmiprop;
+            }
+        }
+
+        //to do : alakítsd át read only propertyvé
+        //public double GetBodyMassIndex()
+        //{
+        //    bmi = tomeg / (magassag * magassag);
+
+        //    return bmi;
+        //}
 
         public string GetBodyCategory()
         {
@@ -44,7 +83,7 @@ namespace Osztaly_vs_Object
                 result = true;
             }
             return result;
-           
+
         }
         public BodyMass(double tomeg, double magassag)
         {
