@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Osztaly_vs_Object
 {
-  public class Coffee
+    public class Coffee
     {
         public string Name { get; set; }
         private int strength;
