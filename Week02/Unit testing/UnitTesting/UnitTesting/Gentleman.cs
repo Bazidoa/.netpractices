@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace UnitTesting
 {
-   public class Gentleman
+    public class Gentleman
     {
         public string SayHello(string name)
         {
             string Greeting = $"Hello " + name;
-            return Greeting;         
+
+            return Greeting;
+        }
+        public string SayHello()
+        {
+            string Greeting = "Hello Anonymous";
+            return Greeting;
         }
     }
 }
