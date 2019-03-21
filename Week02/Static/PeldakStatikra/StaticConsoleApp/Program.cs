@@ -20,19 +20,22 @@ namespace StaticConsoleApp
 
             Console.WriteLine(Ember.EmberCount);
 
-            Ember elsoEmber = new Ember();
+            Ember elsoEmber = new Ember("Rafi");
             Console.WriteLine(Ember.EmberCount);
 
-            Ember masodikEmber = new Ember();
+            Ember masodikEmber = new Ember("Bob");
             Console.WriteLine(Ember.EmberCount);
-            Ember harmadikEmber = new Ember();
+            Ember harmadikEmber = new Ember("Dzson");
             Console.WriteLine(Ember.EmberCount);
-            Ember negyedikEmber = new Ember();
+            Ember negyedikEmber = new Ember("Rex");
             Console.WriteLine(Ember.EmberCount);
-            Ember otodikEmber = new Ember();
+            Ember otodikEmber = new Ember("Jason");
             Console.WriteLine(Ember.EmberCount);
 
+            Console.WriteLine(harmadikEmber.Name);
+            harmadikEmber.Name = "Ms. Rex";
 
+            Console.WriteLine(harmadikEmber.Name);
             Console.ReadKey();
 
         }
