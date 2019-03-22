@@ -15,11 +15,18 @@ namespace UnitTestProject1
             //Imi?: Ez így "szabályos" vagy illik írni minden meghívásra külön TestMethodot?"
             Assert.AreEqual('b', myLetterManager.SkipIfVowel('a'));
             Assert.AreEqual('b', myLetterManager.SkipIfVowel('b'));
-           // Assert.AreEqual('b', myLetterManager.SkipIfVowel('c'));
-           // Assert.AreEqual('f', myLetterManager.SkipIfVowel('e'));
+            // Assert.AreEqual('b', myLetterManager.SkipIfVowel('c'));
+            // Assert.AreEqual('f', myLetterManager.SkipIfVowel('e'));
 
+        }
+        [TestMethod]
+        public void ChangeIfHungarianStrangeLetterTest()
+        {
+            LetterManager myLetterManager = new LetterManager();
 
-
+            Assert.AreEqual('a', myLetterManager.ChangeIfHungarianStrangeLetter('á'));
+            Assert.AreEqual('i', myLetterManager.ChangeIfHungarianStrangeLetter('i'));
+            Assert.AreEqual('o', myLetterManager.ChangeIfHungarianStrangeLetter('ő'));
 
 
         }
