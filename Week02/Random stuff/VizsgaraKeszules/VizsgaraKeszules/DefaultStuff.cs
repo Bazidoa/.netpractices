@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// code added in github
 namespace VizsgaraKeszules
 {
     public class DefaultStuff
