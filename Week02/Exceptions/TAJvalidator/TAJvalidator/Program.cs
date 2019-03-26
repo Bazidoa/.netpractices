@@ -18,7 +18,6 @@ namespace TAJvalidator
             catch (ArgumentOutOfRangeException ex)
             {
                 Console.WriteLine(ex.Message);
-
             }
 
             firstPatient.SocialSecurityNumber = "012345678";

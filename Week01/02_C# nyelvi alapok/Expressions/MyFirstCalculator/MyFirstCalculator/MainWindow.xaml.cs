@@ -32,7 +32,8 @@ namespace MyFirstCalculator
 
             int firstNum = int.Parse(FirstNumberBox.Text);
             int secondNum = int.Parse(SecondNumberBox.Text);
-            double guessNum = double.Parse(GuessBox.Text);
+            double guessNum = 1;
+            guessNum = double.Parse(GuessBox.Text);
             double result = 0;
             string choosenOperator = myOperators.Text;
 
@@ -48,8 +49,8 @@ namespace MyFirstCalculator
                     result = calc.Multiplier(firstNum, secondNum);
                     break;
                 case "/":
-                    double dfirstNum = firstNum * 10 / 10d;
-                    double dsecondNum = secondNum * 10 / 10d;
+                    double dfirstNum = firstNum;
+                    double dsecondNum = secondNum;
                     result = calc.Divider(dfirstNum, dsecondNum);
                     break;
                     

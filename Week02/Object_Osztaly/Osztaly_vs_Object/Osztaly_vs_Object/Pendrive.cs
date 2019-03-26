@@ -52,6 +52,7 @@ namespace Osztaly_vs_Object
             return dataOfPendrive;
         }
 
+       
         //increases the pendrives price by given percent
         public void IncreasePrice(int percent)
         {
