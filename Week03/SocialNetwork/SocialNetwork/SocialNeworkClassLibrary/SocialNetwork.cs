@@ -55,12 +55,11 @@ namespace SocialNeworkClassLibrary
                 {
                     if (members[i].Connections[j].Connections.Contains(members[i]) == true)
                     {
-                        biDiConnections = biDiConnections + members[i].Name + " & " + members[i].Connections[j].Name + ", ";
+                        biDiConnections = biDiConnections + members[i].Name + " - " + members[i].Connections[j].Name + ", ";
                     }
 
                 }
             }
-
             return biDiConnections;
 
         }
