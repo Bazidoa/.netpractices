@@ -35,6 +35,43 @@ namespace SocialNeworkClassLibrary
             connections.Add(member);
         }
 
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(this.Name);
+
+            List<string> bejeloltTagokNevenekListaja=this.GetConnectedNames();
+
+            for (int i = 0; i < bejeloltTagokNevenekListaja.Count; i++)
+            {
+                sb.Append(bejeloltTagokNevenekListaja[i]);
+            }
+
+            return sb.ToString();
+
+        }
+
+        public List<string> GetConnectedNames()
+        {
+            List<string> bejeloltTagok = new List<string>();
+
+            if (connections.Count == 0)
+            {
+                bejeloltTagok.Add(": ");
+                bejeloltTagok.Add("-");
+                bejeloltTagok.Add($"\n");
+            }
+            for (int i = 0; i < connections.Count; i++)
+            {
+                bejeloltTagok.Add(": ");
+                bejeloltTagok.Add(connections[i].Name);
+                bejeloltTagok.Add($"\n");
+
+
+            }
+
+            return bejeloltTagok;
+        }
 
     }
 }

@@ -32,9 +32,15 @@ namespace SocialNetworkExercise.Tests
         }*/
 
         [TestMethod]
+        public void FindByMemberNull()
+        {
+            Assert.IsNull(socialNetwork.FindByName("Jack"));
+           // Assert.AreEqual("", socialNetwork.FindByName("Jack").Name);
+        }
+
+        [TestMethod]
         public void FindByMember()
         {
-           // Assert.AreEqual("", socialNetwork.FindByName("Jack").Name);
             Assert.AreEqual("Jane", socialNetwork.FindByName("Jane").Name);
         }
 

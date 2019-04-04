@@ -55,13 +55,25 @@ namespace SocialNeworkClassLibrary
                 {
                     if (members[i].Connections[j].Connections.Contains(members[i]) == true)
                     {
-                        biDiConnections = biDiConnections + members[i].Name + " - " + members[i].Connections[j].Name + ", ";
+                        biDiConnections = biDiConnections +", " + members[i].Name + " - " + members[i].Connections[j].Name;
                     }
 
                 }
             }
-            return biDiConnections;
+            return biDiConnections.Substring(2);
+        }
+        
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
 
+            for (int i = 0; i < members.Count; i++)
+            {
+                result.Append(members[i].ToString());
+
+            }
+
+            return result.ToString();
         }
     }
 }
